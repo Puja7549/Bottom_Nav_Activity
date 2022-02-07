@@ -30,7 +30,7 @@ class ProfileFragment : Fragment() {
 
         val textView: TextView = binding.value
         notificationsViewModel.text.observe(viewLifecycleOwner) {
-           // textView.text = it
+            // textView.text = it
         }
         return root
     }
@@ -38,13 +38,13 @@ class ProfileFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var decreamentNumber= 0
+        var decreamentNumber = 0
 
         binding.decreament.setOnClickListener {
             decreamentNumber--
             binding.value.text = decreamentNumber.toString()
 
-            }
+        }
 
 
         binding.increament.setOnClickListener {
@@ -53,9 +53,9 @@ class ProfileFragment : Fragment() {
         }
 
 
-            }
+    }
 
-        }
+}
 
 
 
